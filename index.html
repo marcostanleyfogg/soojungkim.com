@@ -3,16 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Soojung Kim</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .poem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      line-height: 1.1;
+    }
+
+    .poem span {
+      font-size: 10vw; /* 화면 가로 너비의 10% */
+      font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+      .poem span {
+        font-size: 6vw; /* 데스크탑에서는 조금 더 작게 */
+      }
+    }
+  </style>
 </head>
 <body>
-  <p lang="ko">
-    언젠가
-    반드시
-    곡선으로
-    휘어질
-    직선의
-    길이를
-    상상한다
-  </p>
+  <div class="poem">
+    <span>언젠가</span>
+    <span>반드시</span>
+    <span>곡선으로</span>
+    <span>휘어질</span>
+    <span>직선의</span>
+    <span>길이를</span>
+    <span>상상한다</span>
+  </div>
 </body>
 </html>
